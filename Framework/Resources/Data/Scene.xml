@@ -1,0 +1,57 @@
+<scene>
+	<renderData>
+		<WireframeObject path="/wireframe">
+			<cube> Cube.oiWF </cube>
+			<pyramid> Pyramid.oiWF </pyramid>
+			<sphere> Sphere.oiWF </sphere>
+		</WireframeObject>
+		<RenderObject path="/models">
+			<cube> Cube.oiRM </cube>
+			<pyramid> Pyramid.oiRM </pyramid>
+			<sphere> Sphere.oiRM </sphere>
+		</RenderObject>
+		<Texture>
+			<Osomi> Rare.png </Osomi>
+		</Texture>
+	</renderData>
+	<sceneData>
+		<SomeObject name="Cube" static>
+			<transform>
+				<position>
+					<x> 0 </x>
+					<y> 0 </y>
+					<z> 0 </z>
+				</position>
+				<rotation>
+					<pitch> 0 </pitch>
+					<yaw> 0 </yaw>
+				</rotation>
+				<scale>
+					<x> 1 </x>
+					<y> 1 </y>
+					<z> 1 </z>
+				</scale>
+			</transform>
+			<components>
+				<value> WireframeComponent </value>
+				<value> MovementInputComponent </value>
+				<value> RenderComponent </value>
+			</components>
+			<data>
+				<WireframeComponent> 
+					<id> 0 </id>
+				</WireframeComponent>
+				<MovementInputComponent>
+					<speed>
+						<x> 5 </x>
+						<y> 3 </y>
+						<z> 10 </z>
+					</speed>
+				</MovementInputComponent>
+				<RenderComponent> 
+					<id> 0 </id>
+				</RenderComponent>
+			</data>
+		</SomeObject>
+	</sceneData>
+</scene>
